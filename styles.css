@@ -1,0 +1,32 @@
+
+polygon{
+	fill: yellow;
+	stroke:red;
+	stroke-width:50;
+}
+polygon:hover {
+	-webkit-animation: enlarge 10s infinite;
+	animation: enlarge 10s infinite;
+	fill: red;
+	stroke:yellow;
+	stroke-width:50;
+}
+
+@-webkit-keyframes enlarge {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.9);
+	}
+}
+
+@keyframes enlarge {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.9);
+	}
+}
+
